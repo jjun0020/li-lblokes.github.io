@@ -1,0 +1,1089 @@
+
+/*-- -------------------------- -->
+<---         Collection1        -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #collection-1577 {
+    padding: var(--sectionPadding);
+    position: relative;
+    z-index: 1;
+  }
+
+  #collection-1577 .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+
+  #collection-1577 .cs-content {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #collection-1577 .cs-title {
+    margin: 0;
+    color: #6d5253;
+  }
+
+  #collection-1577 .cs-topper {
+    color: #6d5253;
+  }
+
+  #collection-1577 .cs-card-group {
+    list-style: none; 
+    width: 100%;
+    max-width: 34.375rem;
+    margin: auto;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;       
+    row-gap: 2rem;                    
+  }
+
+  #collection-1577 .cs-item {
+    width: 100%;
+    position: relative;
+  }
+
+  #collection-1577 .cs-item:hover .cs-background img {
+    opacity: 0.5;
+    transform: scale(1.4);
+  }
+
+  #collection-1577 .cs-link {
+    width: 100%;
+    text-decoration: none;
+    height: 60vw;
+    max-height: 21.75rem;
+    padding: 2.5rem 1.5rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  #collection-1577 .cs-background {
+    width: 100%;
+    height: 100%;
+    background-color: #e5dddd;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+  }
+
+  #collection-1577 .cs-background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s, opacity 0.3s;
+  }
+
+  #collection-1577 .cs-category {
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.2em;
+    text-align: center;
+    text-decoration: none;
+    width: fit-content;
+    padding: clamp(0.75rem, 2vw, 1.25rem) clamp(1rem, 3vw, 1.5rem);
+    color: var(--main-white, #6d5253);
+    position: relative;
+    transition: color 0.3s;
+  }
+
+  #collection-1577 .cs-category:hover {
+    color: #6d5253;
+  }
+
+  #collection-1577 .cs-category:hover:before {
+    background-color: #ffffff;
+  }
+
+  #collection-1577 .cs-category:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: background-color 0.3s;
+  }
+}
+
+/* Tablet and up - 768px */
+@media only screen and (min-width: 48rem) {
+  #collection-1577 .cs-card-group {
+    max-width: 80rem;
+    grid-template-columns: repeat(4, 1fr);  
+    gap: 2rem;                              
+  }
+
+  #collection-1577 .cs-item {
+    height: clamp(11.75rem, 25vw, 21.75rem);
+  }
+}
+
+
+/*-- -------------------------- -->
+<---        Collection2         -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #collection-1602 {
+    padding: var(--sectionPadding);
+  }
+  #collection-1602 .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+    position: relative;
+    z-index: 1;
+  }
+  #collection-1602 .cs-content {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  #collection-1602 .cs-title {
+    margin: 0;
+    color: #6d5253;
+  }
+  #collection-1602 .cs-button-group {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* 16px - 32px */
+    gap: clamp(1rem, 4vw, 2rem);
+  }
+  #collection-1602 .cs-button {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    padding: 0;
+    color: #6d5253;
+    background-color: transparent;
+    border: none;
+    position: relative;
+    transition: color 0.3s;
+  }
+  #collection-1602 .cs-button:before {
+    content: "";
+    width: 0;
+    height: 1px;
+    background: var(--primary);
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s;
+  }
+  #collection-1602 .cs-button:hover {
+    color: var(--primary);
+    cursor: pointer;
+  }
+  #collection-1602 .cs-button:hover:before {
+    width: 100%;
+  }
+  #collection-1602 .cs-button.cs-active {
+    color: var(--primary);
+  }
+  #collection-1602 .cs-button.cs-active:before {
+    width: 100%;
+  }
+  #collection-1602 .cs-listing-wrapper {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+  }
+  #collection-1602 .cs-listing {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    justify-items: center;
+    grid-auto-flow: row;
+    /* 16px - 20px */
+    gap: clamp(1rem, 1.5vw, 1.25rem);
+    position: relative;
+    transform-style: preserve-3d;
+    perspective: 700px;
+    transition: transform 0.7s, opacity 0.3s, visibility 0.5s, top 0.3s, left 0.3s;
+    /* makes the transform scaling origin the top left corner, dictates the direction by which the scale transforms animate towards */
+    transform-origin: left top;
+  }
+  #collection-1602 .cs-listing.cs-hidden {
+    /* hidden galleries have a 0 opacity, and we animate the opacity to 1 when they become active */
+    opacity: 0;
+    /* by using visibility:hidden instead of display:none, we can see the animations from the opacity and transforms, display:none won't render animations. */
+    visibility: hidden;
+    position: absolute;
+    /* this top and left value help control the animation, by setting it to position absolute and left 0, the gallery won't fly off screen to the left, it will stop its position to be at the left edge of the .cs-container (left: 0). Same for the top:0 value, the gallery won't go past that position when it animates */
+    top: 0;
+    left: 0;
+    /* prevents the hidden galleries from overflowing the section, and makes a nice animations to transition to and from */
+    transform: scaleY(0) scaleX(0);
+    /* prevents the mouse from interacting with it */
+    pointer-events: none;
+  }
+  #collection-1602 .cs-listing.cs-hidden .cs-image {
+    opacity: 0;
+    /* when gallery is hidden, add these styles to the cs-image to animate from when cs-hidden is removed from the .cs-gallery */
+    transform: translateY(2.1875rem) rotateX(90deg);
+  }
+  #collection-1602 .cs-listing.cs-hidden .cs-item {
+    transform: rotateY(180deg);
+    opacity: 0;
+  }
+  #collection-1602 .cs-item {
+    width: 100%;
+    max-width: 23.4375rem;
+    /* overwrites the default 'min-width: auto' value, keeping all grid items the same width no matter what*/
+    min-width: 0;
+    opacity: 1;
+    padding: 1rem;
+    border: 1px solid #e8e8e8;
+    transform: rotateY(0);
+    transition: transform 0.7s, opacity 0.3s;
+  }
+  #collection-1602 .cs-item:nth-of-type(1) {
+    transition-delay: 0.1s;
+  }
+  #collection-1602 .cs-item:nth-of-type(2) {
+    transition-delay: 0.2s;
+  }
+  #collection-1602 .cs-item:nth-of-type(3) {
+    transition-delay: 0.3s;
+  }
+  #collection-1602 .cs-item:nth-of-type(4) {
+    transition-delay: 0.4s;
+  }
+  #collection-1602 .cs-item:nth-of-type(5) {
+    transition-delay: 0.5s;
+  }
+  #collection-1602 .cs-item:nth-of-type(6) {
+    transition-delay: 0.6s;
+  }
+  #collection-1602 .cs-item:nth-of-type(7) {
+    transition-delay: 0.7s;
+  }
+  #collection-1602 .cs-item:nth-of-type(8) {
+    transition-delay: 0.8s;
+  }
+  #collection-1602 .cs-item:nth-of-type(9) {
+    transition-delay: 0.1s;
+  }
+  #collection-1602 .cs-item:nth-of-type(10) {
+    transition-delay: 0.1s;
+  }
+  #collection-1602 .cs-item:nth-of-type(11) {
+    transition-delay: 0.1s;
+  }
+  #collection-1602 .cs-item:nth-of-type(12) {
+    transition-delay: 0.1s;
+  }
+  #collection-1602 .cs-link {
+    text-decoration: none;
+  }
+  #collection-1602 .cs-link:hover .cs-picture img {
+    transform: scale(1.1);
+  }
+  #collection-1602 .cs-picture-group {
+    width: auto;
+    height: 18.75rem;
+    margin-bottom: 1.25rem;
+    position: relative;
+  }
+  #collection-1602 .cs-picture {
+    width: 100%;
+    height: 100%;
+    background-color: #f6f6f6;
+    overflow: hidden;
+    display: block;
+  }
+  #collection-1602 .cs-picture img {
+    width: 100%;
+    height: 100%;
+    /* using object-fit contain to keep the entirety of the product image in the frame */
+    /* feel free to change this to 'cover', or adjust the background-color above if you have consistent backgrounds on your products */
+    object-fit: contain;
+    transition: transform 0.6s;
+  }
+  
+  #collection-1602 .cs-category {
+    font-size: 1rem;
+    line-height: 1.5em;
+    color: #767676;
+  }
+  #collection-1602 .cs-name {
+    /* 20px - 25px */
+    font-size: clamp(1.25rem, 1vw, 1.5625rem);
+    font-weight: 700;
+    line-height: 1.2em;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+    margin: 0;
+    color: var(--headerColor);
+    overflow: hidden;
+  }
+  #collection-1602 .cs-actions {
+    margin-top: 1.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #collection-1602 .cs-price {
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.2em;
+    color: #000000;
+  }
+  #collection-1602 .cs-was-price {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.2em;
+    text-decoration: line-through;
+    color: #767676;
+  }
+  #collection-1602 .cs-stars {
+    margin-top: 0.25rem;
+    display: flex;
+  }
+  #collection-1602 .cs-star {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+  #collection-1602 .cs-buy {
+    max-height: 2.5rem;
+    padding: 0.5rem;
+    background: none;
+    border: 2px solid var(--primary);
+    border-radius: 0.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #collection-1602 .cs-basket {
+    width: 1.5rem;
+    height: auto;
+  }
+  .cs-buy img {
+    height: 24px;
+    width: 24px;
+    object-fit: contain;
+    display: block;
+}
+}
+
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #collection-1602 .cs-content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #collection-1602 .cs-listing {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  #collection-1602 .cs-item {
+    max-width: none;
+  }
+  #collection-1602 .cs-picture-group {
+    /* 200px - 320px */
+    height: clamp(12.5rem, 23vw, 20rem);
+  }
+}
+
+
+/*-- -------------------------- -->
+<---            CTA             -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #cta-1394 {
+        /* 60px - 124px top and bottom */
+        padding: clamp(3.75rem, 7.82vw, 7.75rem) 1rem;
+        background-color: #1a1a1a;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+    }
+    #cta-1394 .cs-container {
+        width: 100%;
+        /* changes to 1280px at tablet */
+        max-width: 34.375rem;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* 48px - 64px */
+        gap: clamp(3rem, 6vw, 4rem);
+        position: relative;
+        z-index: 1;
+    }
+    #cta-1394 .cs-content {
+        /* set text align to left if content needs to be left aligned */
+        text-align: center;
+        width: 100%;
+        max-width: 32.625rem;
+        display: flex;
+        flex-direction: column;
+        /* centers content horizontally, set to flex-start to left align */
+        align-items: center;
+        position: relative;
+        z-index: 1;
+    }
+
+    #cta-1394 .cs-title,
+    #cta-1394 .cs-text {
+        max-width: 31.25rem;
+        color: var(--bodyTextColorWhite);
+    }
+    #cta-1394 .cs-text {
+        margin-bottom: 2rem;
+        opacity: 0.8;
+    }
+    #cta-1394 .cs-form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0.75rem;
+        position: relative;
+        z-index: 1;
+    }
+    #cta-1394 .cs-input {
+        font-size: 1rem;
+        width: 100%;
+        /* 46px - 72px */
+        height: clamp(2.875rem, 8vw, 4.5rem);
+        margin: 0;
+        padding: 0;
+        padding-left: 1.25rem;
+        border: none;
+        border-radius: 5rem;
+        /* prevents padding from adding to width and height */
+        box-sizing: border-box;
+        display: block;
+    }
+    #cta-1394 .cs-input::placeholder {
+        color: #767676;
+    }
+    #cta-1394 .cs-button-solid {
+        font-size: 1.15rem;
+        font-family: var(--headerColor);
+        /* 46px - 56px */
+        line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+        text-decoration: none;
+        font-weight: 700;
+        text-align: center;
+        margin: 0;
+        color: #6d5253;
+        min-width: 9.375rem;
+        padding: 0 2rem;
+        overflow: hidden;
+        background-color: var(--primary);
+        border-radius: 5rem;
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        /* prevents padding from adding to the width */
+        box-sizing: border-box;
+    }
+    #cta-1394 .cs-button-solid:before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 0%;
+        background: #b2a370;
+        opacity: 1;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: width 0.3s;
+    }
+    #cta-1394 .cs-button-solid:hover {
+        cursor: pointer;
+    }
+    #cta-1394 .cs-button-solid:hover:before {
+        width: 100%;
+    }
+    #cta-1394 .cs-submit {
+        width: 100%;
+        border: none;
+    }
+    #cta-1394 .cs-background {
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+    #cta-1394 .cs-background img {
+        height: 100%;
+        width: 100%;
+        opacity: 0.5;
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+    }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #cta-1394 .cs-container {
+        max-width: 80rem;
+    }
+    #cta-1394 .cs-input {
+        width: 100%;
+    }
+    #cta-1394 .cs-submit {
+        width: auto;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0.5rem;
+    }
+    #cta-1394 .cs-picture {
+        width: 50%;
+    }
+}
+
+/*-- -------------------------- -->
+<---          Footer            -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #cs-footer-1292 {
+        padding: var(--sectionPadding);
+        padding-bottom: 1.25rem;
+        box-sizing: border-box;
+        overflow: hidden;
+        position: relative;
+        z-index: 10;
+        /* Navigation Links */
+    }
+    #cs-footer-1292 .cs-container {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        column-gap: 1.5rem;
+        row-gap: 2.25rem;
+    }
+    #cs-footer-1292 .cs-logo-group {
+        /* takes up all the space, lets the other ul's wrap below it */
+        width: 100%;
+        position: relative;
+    }
+    #cs-footer-1292 .cs-logo {
+        width: 12.3125rem;
+        height: auto;
+        display: block;
+        /* 20px - 24px */
+        margin: 0 0 clamp(1.25rem, 2vw, 1.5rem) 0;
+    }
+    #cs-footer-1292 .cs-logo-img {
+        width: 100%;
+        height: auto;
+    }
+    #cs-footer-1292 .cs-logo-img.dark {
+        display: none;
+    }
+    #cs-footer-1292 .cs-text {
+        font-size: 0.875rem;
+        line-height: 1.5em;
+        /* 20px - 36px */
+        margin: 0 0 clamp(1.25rem, 3vw, 2.25rem);
+        width: 78%;
+        max-width: 15rem;
+        color: var(--bodyTextColor);
+    }
+    #cs-footer-1292 .cs-link {
+        font-size: 1.25rem;
+        line-height: 1.5em;
+        text-decoration: none;
+        margin: 0;
+        color: var(--headerColor);
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 0.75rem;
+        transition: color 0.3s;
+    }
+    #cs-footer-1292 .cs-link:hover {
+        color: var(--primary);
+    }
+    #cs-footer-1292 .cs-nav {
+        width: 45%;
+        max-width: 11.25rem;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    #cs-footer-1292 .cs-nav-li {
+        list-style: none;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    #cs-footer-1292 .cs-header {
+        font-size: 1.5rem;
+        line-height: 1.2em;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+        color: var(--headerColor);
+        position: relative;
+        display: block;
+    }
+    #cs-footer-1292 .cs-nav-link {
+        font-size: 1.25rem;
+        text-decoration: none;
+        line-height: 1.5em;
+        width: auto;
+        color: var(--bodyTextColor);
+        position: relative;
+        display: inline-block;
+        transition: color 0.3s;
+    }
+    #cs-footer-1292 .cs-nav-link:before {
+        /* underline */
+        content: "";
+        width: 0%;
+        height: 0.125rem;
+        background: currentColor;
+        opacity: 1;
+        position: absolute;
+        display: block;
+        bottom: -0.125rem;
+        left: 0;
+        transition: width 0.3s;
+    }
+    #cs-footer-1292 .cs-nav-link:hover {
+        color: var(--primary);
+    }
+    #cs-footer-1292 .cs-nav-link:hover:before {
+        width: 100%;
+    }
+    #cs-footer-1292 .cs-bottom {
+        max-width: 80rem;
+        margin: auto;
+        /* 48px - 100px */
+        margin-top: clamp(3rem, 9vw, 6.25rem);
+        /* 20px - 32px */
+        padding: clamp(1.25rem, 3vw, 2rem) 0 0 0;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        column-gap: 2.25rem;
+        row-gap: 0.75rem;
+    }
+    #cs-footer-1292 .cs-copyright,
+    #cs-footer-1292 .cs-copyright-link {
+        font-size: 0.875rem;
+        line-height: 1.5em;
+        color: var(--bodyTextColor);
+    }
+    #cs-footer-1292 .cs-copyright {
+        text-align: center;
+        width: 100%;
+    }
+    #cs-footer-1292 .cs-copyright-link {
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+    #cs-footer-1292 .cs-copyright-link:hover {
+        color: #b2a370;
+    }
+    #cs-footer-1292 .cs-floater {
+        width: 31.625rem;
+        height: 31.625rem;
+        margin-left: 34.375rem;
+        border-radius: 50%;
+        border: 2px solid var(--primary);
+        opacity: 0.1;
+        display: none;
+        position: absolute;
+        left: 50%;
+        top: 0;
+        z-index: -1;
+    }
+    #cs-footer-1292 .cs-floater:before {
+        content: "";
+        width: 44.6875rem;
+        height: 44.6875rem;
+        border: 2px solid var(--primary);
+        border-radius: 50%;
+        opacity: 0.6;
+        position: absolute;
+        display: block;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    #cs-footer-1292 .cs-floater:after {
+        content: "";
+        width: 60.1875rem;
+        height: 60.1875rem;
+        border: 2px solid var(--primary);
+        border-radius: 50%;
+        opacity: 0.3;
+        position: absolute;
+        display: block;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #cs-footer-1292 .cs-container {
+        row-gap: 0;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        column-gap: 5.5rem;
+        row-gap: 2.5rem;
+    }
+    #cs-footer-1292 .cs-nav {
+        width: auto;
+    }
+    #cs-footer-1292 .cs-bottom {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
+    #cs-footer-1292 .cs-copyright {
+        text-align: left;
+        width: auto;
+        margin-right: auto;
+    }
+    #cs-footer-1292 .cs-floater {
+        display: block;
+    }
+}
+
+/*-- -------------------------- -->
+<---          Contact           -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #contact-2320 {
+    padding: var(--sectionPadding);
+    display: flex;
+    flex-direction: column;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+    position: relative;
+    z-index: 1;
+    background-color: #cec8b5;
+  }
+  #contact-2320 .cs-container {
+    width: 100%;
+    /* changes to 1280px at desktop */
+    max-width: 36.25rem;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+  #contact-2320 .cs-container2 {
+    width: 100%;
+    /* changes to 1280px at desktop */
+    max-width: 36.25rem;
+    padding: 5rem 3rem;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+  }
+  #contact-2320 .cs-container2 .cs-topper {
+    color: #fff;
+  }
+  #contact-2320 .cs-content {
+    text-align: left;
+  }
+  #contact-2320 .cs-title {
+    margin-bottom: 2rem;
+  }
+  #contact-2320 .cs-form {
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.75rem;
+  }
+  #contact-2320 .cs-label {
+    /* 14px - 16px */
+    font-size: clamp(0.875rem, 1.5vw, 1.25rem);
+    width: 100%;
+    color: #6d5253;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.25rem;
+  }
+  #contact-2320 .cs-input {
+    font-size: 1rem;
+    width: 100%;
+    height: 3.5rem;
+    padding: 0;
+    padding-left: 1.5rem;
+    color: var(--headerColor);
+    background-color: #f7f7f7;
+    border: none;
+    /* prevents padding from adding to height and width */
+    box-sizing: border-box;
+  }
+  #contact-2320 .cs-input::placeholder {
+    color: #7d799c;
+    opacity: 0.6;
+  }
+  #contact-2320 .cs-textarea {
+    min-height: 7.5rem;
+    padding-top: 1.5rem;
+    margin-bottom: 0.75rem;
+    font-family: inherit;
+  }
+  #contact-2320 .cs-button-solid {
+    font-size: 1rem;
+    /* 46px - 56px */
+    line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    color: #fff;
+    padding: 0 1.5rem;
+    background-color: var(--primary);
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    /* prevents padding from adding to the width */
+    box-sizing: border-box;
+  }
+  #contact-2320 .cs-button-solid:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background: #000;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 0.25rem;
+    transition: width 0.3s;
+  }
+  #contact-2320 .cs-button-solid:hover:before {
+    width: 100%;
+  }
+  #contact-2320 .cs-submit {
+    text-transform: uppercase;
+    background-color: var(--secondaryLight);
+    color: var(--headerColor);
+    border: none;
+    transition: color 0.3s;
+  }
+  #contact-2320 .cs-submit:hover {
+    cursor: pointer;
+    color: #fff;
+  }
+  #contact-2320 .cs-map {
+    width: 100%;
+    max-width: 39.375rem;
+    height: 25rem;
+    position: relative;
+    z-index: 1;
+    display: block;
+  }
+  #contact-2320 .cs-iframe-wrapper {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* 40px - 56px */
+    bottom: clamp(2.5rem, 5vw, 3.5rem);
+  }
+  #contact-2320 .cs-iframe-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  #contact-2320 .cs-box {
+    width: 90%;
+    max-width: 28.125rem;
+    /* 16px - 32px top & bottom */
+    /* 16px left & right */
+    padding: clamp(1rem, 3vw, 2rem) clamp(1rem, 2.4vw, 1rem);
+    background-color: #fff;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+  }
+  #contact-2320 .cs-box:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: var(--primary);
+    pointer-events: none;
+    opacity: 0.1;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  #contact-2320 .cs-icon {
+    width: 2rem;
+    height: auto;
+    display: block;
+  }
+  #contact-2320 .cs-flex {
+    display: flex;
+    flex-direction: column;
+  }
+  #contact-2320 .cs-header {
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.2em;
+    margin: 0 0 0.5rem;
+    color: var(--headerColor);
+  }
+  #contact-2320 .cs-address {
+    font-size: clamp(0.75rem, 2.8vw, 1rem);
+    line-height: 1.5em;
+    margin: 0;
+    color: var(--bodyTextColor);
+  }
+  #contact-2320 .cs-hours {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #contact-2320 .cs-background {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  #contact-2320 .cs-background:before {
+    /* background color overlay */
+    content: '';
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    opacity: 0.19;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  #contact-2320 .cs-background img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* Makes img tag act as a background image */
+    object-fit: cover;
+  }
+}
+/* Small Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #contact-2320 .cs-container {
+    max-width: 80rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 3.25rem;
+  }
+  #contact-2320 .cs-container2 {
+    max-width: 80rem;
+  }
+  #contact-2320 .cs-content {
+    max-width: 32.625rem;
+    /* 24px - 80px */
+    padding: clamp(2rem, 5vw, 5rem) 0;
+  }
+  #contact-2320 .cs-title,
+  #contact-2320 .cs-topper,
+  #contact-2320 .cs-text {
+    text-align: left;
+    margin-left: 0;
+  }
+  #contact-2320 .cs-title {
+    max-width: 32.625rem;
+  }
+  #contact-2320 .cs-services,
+  #contact-2320 .cs-phone {
+    width: 47%;
+  }
+  #contact-2320 .cs-button-solid {
+    margin-left: 0;
+  }
+  #contact-2320 .cs-map {
+    max-width: 39.375rem;
+    height: auto;
+    order: -1;
+  }
+}
+                                
